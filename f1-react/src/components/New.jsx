@@ -6,7 +6,7 @@ class New extends React.Component {
       driver: {
         name: "Daniel Ricciardo",
         team: "Renault",
-        profile: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.grandprix.com.au%2Ffan-zone%2Fformula-1%2Fdrivers%2Fdaniel-ricciardo&psig=AOvVaw3ePjo3gXsjO6odurzmm1yF&ust=1592974918131000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPiOq5aUl-oCFQAAAAAdAAAAABAD"
+        profile: "https://www.grandprix.com.au/sites/default/files/styles/driver_or_rider_profile_default/public/driver-rider/image/profile/Daniel-Ricciardo-AusGP-20.jpg"
       }
     }
     try {

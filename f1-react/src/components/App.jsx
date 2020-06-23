@@ -3,10 +3,14 @@ import New from './New'
 
 class App extends React.Component {
   async componentDidMount() {
+    await this.getDrivers();
+  }
+
+  getDrivers = async () => {
     const response = await fetch("http://localhost:3000");
     const drivers = await response.json();
     this.setState({ drivers: drivers});
-  }
+  };
 
   render() {
     const drivers = this.state?.drivers;
@@ -21,11 +25,11 @@ class App extends React.Component {
               <h5>Races for: {driver.team}</h5>
               <hr/>
             </div>
-          )
+          );
         })}
-        <New/>
+        <New getDrivers={this.getDrivers}/>
       </div>
-    )
+    );
   }
 }
 
